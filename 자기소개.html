@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="webs" href="style1.css" type="text/css">
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--제목 폰트-->
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Righteous);
+
+      *,
+      *:before,
+      *:after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        position: relative;
+      }
+
+      html,
+      body {
+        height: 10%;
+      }
+      
+      body:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 0;
+        height: 100%;
+      }
+
+      h1 {
+        display: inline-block;
+        color: rgb(0, 0, 0);
+        font-family: 'Righteous', serif;
+        font-size: 12em;
+        text-shadow: 0.03em 0.03em 0 rgb(169, 169, 169);
+      }
+      h1:after {
+        content: attr(data-shadow);
+        position: absolute;
+        top: 0.06em;
+        left: 0.06em;
+        z-index: -1;
+        text-shadow: none;
+        background-image: linear-gradient(
+          45deg,
+          transparent 45%,
+          rgb(75, 75, 75) 45%,
+          rgb(77, 77, 77) 55%,
+          transparent 0
+        );
+      }
+    </style>
+
+  </head>
+    <body>
+      <h1>Resume!</h1>
+      <video style="width: 400px;height: 100px;" loop autoplay muted src="Fish_Spinning.mp4"></video>
+      <video style="width: 400px;height: 100px;" loop autoplay muted src="HappyCat.mp4"></video>
+            
+            
+      <header>
+      </header>
+          <nav class="menu-bar">
+            <div class = "index">
+              <!-- 프로필 이미지 -->
+              <div style="float:right "class = "img">
+                <img id="porfile-img" src ="pfimg.jpeg"
+                style="width:300px;height:300px; border-radius: 20%;"
+                />
+                <h2>20233111 최종은</h2>
+                <h7>[WINK] 신입부원</h7>
+                <h6>KMU SW23</h6>
+            </div>
+            
+            <!-- 목차 내용 -->
+            
+          </nav>
+        </body>
+        <body>
+          <div id="container">
+            <!-- 사이드바 -->
+            <aside>
+
+              <div id="namecard">
+                <h2>Choi Jong Eun</h2>
+              </div>
+              <br/>
+
+              <div id="detail">
+                <p>Seoul, Korea</p>
+                <p>alex.choi@daum.net</p>
+              </div>
+              <br/>
+
+              <div id="sns">
+                <h2>SNS</h2>
+                <A href="https://www.instagram.com/_jongeun04/">instargram</A>
+                <br/>
+                <A href="https://github.com/SilVerBell0109">Github</A>
+                <br/>
+                <A href="https://www.acmicpc.net/user/silverbell">BOJ</A>
+                <br/>
+                <A href="https://career.programmers.co.kr/pr/alexchoi_2225">Programmers</A>
+              </div>
+              <br/>
+
+            </aside>
+
+            <div id="main">
+              ​
+              <!-- 사이드 프로젝트 -->
+              <section>
+                <h2 class="subtitle">Experience</h2>
+                <ul>
+                  <li>
+
+                    <table width="600px" style="border-collapse: separate; border-radius: 8px;" border="2">
+                      <th>
+                        NFC를 이용한 학생 출입 확인 시스템 제작(Arduino,HTML)
+                      </th>
+                  
+                      <tr>
+                        <td>특정 장소에 학생이 몇시에 출입하였는지, 현재 몇 명이 있는지 확인하는 아두이노 시스템을 제작하고 학생 현황을 확인 할 수 있는 인터넷 사이트를 제작하였음.
+                  교실에 제작한 장치를 설치하고 교실마다 사이트에 접속할 수 있는 QR코드를 붙여두어 도서관이나 교실, 자습실, 실습실에 사람이 얼마나 있는지 확인할 수 있어 학생들의 이동시간이 단축되었고 ,교실에 출입한 시간이 정확하게 기록되어있기에 정확한 출석에 활용하였음
+                        </td>
+                      </tr>
+
+                    </table>
+
+                  </li>
+                  <li>
+                    <table width="600px" style="border-collapse: separate; border-radius: 8px;" border="2">
+                      <th>
+                        손글씨 인식 인식 프로그램 제작(Python,Numpy)
+                      </th>
+                  
+                      <tr>
+                        <td>MNIST 데이터와 Python, numpy를 이용하여 0부터 9까지의 손글씨를 판별하는 머신러닝 프로그램을 제작해 보았음.
+                          Mnist데이터셋을 분석하고 이를 제작한 프로그램과 알고리즘에 맞게 전처리하는 과정을 알 수 있었고, Numpy를 이용해 행렬 계산을 하는 방법도 알 수 있었음.
+                        </td>
+                      </tr>
+                    </table>
+                  </li>
+                  
+                </li>
+                <li>
+                  <table width="600px" style="border-collapse: separate; border-radius: 8px;" border="2">
+                    <th>
+                      TeachableMachine을 이용한 쓰레기 분류 사이트 제작(JavaScript,HTML)
+                    </th>
+                
+                    <tr>
+                      <td>투명페트병 분리수거를 돕기 위해 TeachableMachine로 인공지능 모델을 제작하고, 이를 Javascript로 추출해 외부 사이트를 제작하였음
+                        인공지능 모델을 제작, 이를 이용한 사이트를 제작하고 배포까지 하는 전체적인 과정을 직접 경험할 수 있었고 HTML을 사용하는 기본적인 방법과 자바스크립트 코드를 HTML에 로드하는 방법 또한 알 수 있음.
+                      <td>
+                        <A href="https://zippy-buttercream-3dc7e5.netlify.app/">Link!</A>
+                      </td>
+                      </tr>
+                  </table>
+                </li>
+                
+                </ul>
+                <br/><br/><br/><br/>
+              </section>
+      
+              <!-- 수상 -->
+              </section>
+      
+              <!-- 학력 -->
+              <section>
+                <h2 class="subtitle">Education</h2>
+                <table>
+                  <caption>
+                    학력 사항
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th>출신학교</th>
+                      <th>전공</th>
+                      <th>기간</th>
+                      <th>구분</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>국민대학교</td>
+                      <td>소프트웨어학부</td>
+                      <td>2023.3 ~</td>
+                    </tr>
+                    <tr>
+                      <td>김해분성고등학교</td>
+                      <td></td>
+                      <td>2020.3 ~ 2023.2</td>
+                      <td>졸업</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+            </div>
+          </div>
+        </body>
+</html>
+
